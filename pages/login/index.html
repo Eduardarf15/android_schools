@@ -1,64 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="../../assets/img/Computex.jpg">
     <title>Login</title>
 </head>
+
 <body>
 
-<!-- parte principal do login -->
-<div class="main-login">
-    <!-- lado esquerdo -->
-    <div class="left-login">
-        <img id="img" src="../../assets/img/Computex.jpg" alt="Logo Computex">
-        <h1>Bem-vindo de volta</h1>
-        <p>Gestão Escolar</p>
-    </div>
-
-    <!--lado direito que vai ser o formulário de acesso -->
-    <div class="right-login">
-        <div class="card-login">
-
-            <!-- ícone do usuario no topo do card -->
-            <div class="login-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="26" height="26">
-                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                    <circle cx="12" cy="7" r="4"/>
-                </svg>
-            </div>
-
-            <h1>Login</h1>
-            <p class="card-subtitle">Insira suas credenciais para continuar</p>
-
-            <!--formulário de acesso-->
-            <form>
-                <!--input matricula-->
-                <div class="textfield">
-                    <label for="matricula">Matrícula</label>
-                    <input type="text" id="matricula" name="matricula" placeholder="Digite sua matrícula" required>
-                </div>
-
-                <!--input senha-->
-                <div class="textfield">
-                    <label for="senha">Senha</label>
-                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
-                </div>
-
-                <button type="submit" class="btn-login">Entrar</button>
-            </form>
-
-            <a href="#" class="forgot-link">Esqueceu sua senha?</a>
-
-            <!-- botão de acesso exclusivo para gestores escolares -->
-            <a href="gestor-escolar.html" class="btn-gestor" target="_blank">Acesso Gestor Escolar</a>
-
+    <!-- parte principal do login -->
+    <div class="main-login">
+        <!-- lado esquerdo -->
+        <div class="left-login">
+            <img id="img" src="../../assets/img/Computex.jpg" alt="Logo Computex">
+            <h1>Bem-vindo de volta</h1>
+            <p>Gestão Escolar</p>
         </div>
-    </div>
 
-</div>
+        <!--lado direito que vai ser o formulário de acesso -->
+        <div class="right-login">
+            <div class="card-login">
+
+                <!-- ícone do usuario no topo do card -->
+                <div class="login-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" width="26" height="26">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                    </svg>
+                </div>
+
+                <h1>Login</h1>
+                <p class="card-subtitle">Insira suas credenciais para continuar</p>
+
+                <!--formulário de acesso-->
+                <form>
+                    <!--input matricula-->
+                    <div class="textfield">
+                        <label for="matricula">Matrícula</label>
+                        <input type="text" id="matricula" name="matricula" placeholder="Digite sua matrícula" required>
+                    </div>
+
+                    <!--input senha-->
+                    <div class="textfield">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                    </div>
+
+                    <button type="submit" class="btn-login">Entrar</button>
+                </form>
+
+                <a href="#" class="forgot-link">Esqueceu sua senha?</a>
+
+                <!-- botão de acesso exclusivo para gestores escolares -->
+                <a href="gestor-escolar.html" class="btn-gestor" target="_blank">Acesso Gestor Escolar</a>
+
+            </div>
+        </div>
+
+    </div>
 </body>
+
 </html>

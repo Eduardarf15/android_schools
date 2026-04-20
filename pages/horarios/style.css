@@ -1,0 +1,168 @@
+:root {
+    --primary-blue: #004080;
+    --primary-blue-hover: #003366;
+    --accent-orange: #FF8C00;
+    --accent-orange-hover: #E67E00;
+    --bg-light: #F0F4F8;
+    --text-main: #2C3E50;
+    --text-muted: #7F8C8D;
+    --border-color: #DCDDE1;
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.12);
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', arial, sans-serif;
+    background: var(--bg-light);
+    color: var(--text-main);
+}
+
+.header {
+    background: var(--primary-blue);
+    padding: 1rem 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: sticky;
+    top: 0;
+    box-shadow: var(--shadow-md);
+}
+
+.header-logo {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    background: var(--white);
+    border-radius: 8px;
+    padding: 2px;
+}
+
+.header-title {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.header-sub {
+    color: var(--white);
+    font-size: 12px;
+}
+
+.summary-bar {
+    display: flex;
+    gap: 10px;
+    padding: 1rem;
+}
+
+.summary-chip {
+    width: 100%;
+    background: var(--white);
+    border-radius: 10px;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+}
+
+.chip-value {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--primary-blue);
+    display: block;
+    height: 1.5em;
+}
+
+.chip-label {
+    font-size: 10px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+.timeline {
+    padding: 0 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.aula-card {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.time-col {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    text-align: center;
+}
+
+.time-start {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--primary-blue);
+}
+
+.time-end {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.info-card {
+    flex: 1;
+    background: var(--white);
+    border-radius: 12px;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--primary-blue);
+    box-shadow: var(--shadow-sm);
+}
+
+.subject-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.subject-details {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 2px;
+}
+
+.intervalo {
+    text-align: center;
+    padding: 10px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    border-top: 1px dashed var(--border-color);
+    border-bottom: 1px dashed var(--border-color);
+    margin: 5px 0;
+}
+
+.theme-portugues {
+    border-left-color: var(--primary-blue);
+}
+
+.theme-literatura {
+    border-left-color: #9b59b6;
+}
+
+.theme-historia {
+    border-left-color: #e67e22;
+}
+
+.theme-ed-fisica {
+    border-left-color: #27ae60;
+}
