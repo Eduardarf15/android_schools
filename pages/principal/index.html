@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Computex</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="../../assets/img/Computex.jpg">
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav>
+        <a href="#" class="nav-logo">
+            <img src="../../assets/img/Computex.jpg" alt="Computex" />
+            <span>Computex</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">O Gestor</a></li>
+            <li><a href="#">Aplicativos</a></li>
+            <li><a href="#">Suporte</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Downloads</a></li>
+        </ul>
+        <button class="nav-cta" onclick="window.location.href='../login/index.html';">Login</button>
+    </nav>
+
+    <!-- hero infos -->
+    <section class="hero">
+
+        <div class="slides-wrap">
+
+            <!-- slide 1 -->
+            <div class="slide active" id="slide-0">
+                <div class="slide-content">
+                    <span class="slide-tag">+ de 30 anos no mercado</span>
+                    <h1 class="slide-title">
+                        <em>Gestor Escolar</em><br />
+                        Solução na medida<br />certa para sua escola
+                    </h1>
+                    <p class="slide-sub">
+                        Sistema completo de gestão escolar desenvolvido por quem entende de educação. Da secretaria ao
+                        financeiro, tudo integrado.
+                    </p>
+                    <a href="#" class="slide-btn">
+                        Saiba mais
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+                <img class="slide-icon" src="../../assets/img/modern.gif" alt="modern" />
+            </div>
+
+            <!-- slide 2 -->
+            <div class="slide" id="slide-1">
+                <div class="slide-content">
+                    <span class="slide-tag">Aplicativo Gratuito</span>
+                    <h1 class="slide-title">
+                        <em>Agenda Eletrônica</em><br />
+                        Para Android<br />e iOS
+                    </h1>
+                    <p class="slide-sub">
+                        Pais e alunos conectados à escola em tempo real. Comunicados, boletim, boletos e agenda na palma
+                        da mão.
+                    </p>
+                    <a href="#" class="slide-btn">
+                        Saiba mais
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+                <img class="slide-image" src="../../assets/img/Computex.jpg" alt="App Gestor Escolar" />
+            </div>
+
+            <!-- slide 3 -->
+            <div class="slide" id="slide-2">
+                <div class="slide-content">
+                    <span class="slide-tag">Comunicação Direta</span>
+                    <h1 class="slide-title">
+                        <em>Chat Exclusivo</em><br />
+                        Entre pais e<br />coordenadores
+                    </h1>
+                    <p class="slide-sub">
+                        Resolva questões de forma rápida e eficaz. Um canal direto e seguro entre a família e a escola.
+                    </p>
+                    <a href="#" class="slide-btn">
+                        Saiba mais
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- /slides-wrap -->
+
+        <!-- arrows -->
+        <button class="arrow prev" onclick="move(-1)">&#8592;</button>
+        <button class="arrow next" onclick="move(1)">&#8594;</button>
+
+        <!-- dots -->
+        <div class="dots">
+            <div class="dot active" onclick="goTo(0)"></div>
+            <div class="dot" onclick="goTo(1)"></div>
+            <div class="dot" onclick="goTo(2)"></div>
+        </div>
+
+        <!-- stats -->
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-num">+30</div>
+                <div class="stat-lbl">Anos de experiência</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">100%</div>
+                <div class="stat-lbl">Foco em educação</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">CE</div>
+                <div class="stat-lbl">Empresa cearense</div>
+            </div>
+        </div>
+
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

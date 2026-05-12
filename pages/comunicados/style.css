@@ -63,6 +63,21 @@
       opacity: 1;
       background: var(--white);
     }
+.logout-btn {
+      background: transparent;
+      border: 2px solid var(--white);
+      border-radius: 8px;
+      width: 38px;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+ 
+    .logout-btn:hover { background: var(--white); }
+    .logout-btn img { width: 20px; height: 20px; }
  
     .tab-bar {
       background: var(--white);

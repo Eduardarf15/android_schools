@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="../../assets/img/Computex.jpg">
+    <title>Gestor Escolar</title>
+</head>
+
+<body>
+
+    <!-- tela principal -->
+    <div class="main-login">
+        <!-- lado esquerdo -->
+        <div class="left-login">
+
+            <!-- logo -->
+            <img src="../../assets/img/Computex.jpg" alt="Logo Computex">
+            <!-- textos -->
+            <h1>Painel do Gestor</h1>
+            <p>controle acadêmico e administrativo</p>
+        </div>
+
+        <!-- lado direito -->
+        <div class="right-login">
+            <!-- card -->
+            <div class="card-login">
+
+                <!-- icone -->
+                <div class="login-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" width="26" height="26">
+
+                        <path d="M12 12c2.761 0 5-2.239 5-5S14.761 2 12 2 7 4.239 7 7s2.239 5 5 5z" />
+                        <path d="M20 21a8 8 0 1 0-16 0" />
+                    </svg>
+                </div>
+
+                <!-- titulo -->
+                <h1>Gestor</h1>
+                <!-- subtitulo -->
+                <p class="card-subtitle">
+                    acesse o painel administrativo da escola
+                </p>
+
+                <!-- formulario -->
+                <form>
+                    <!-- campo usuario -->
+                    <div class="textfield">
+                        <label for="usuario">Usuário: Gestor</label>
+                        <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário" required>
+                    </div>
+
+                    <!-- campo senha -->
+                    <div class="textfield">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                    </div>
+
+                    <!-- botão -->
+                    <button type="submit" class="btn-login">
+                        Entrar no Painel
+                    </button>
+                </form>
+
+                <!-- recuperar senha -->
+                <a href="#" class="forgot-link">
+                    Esqueceu sua senha?
+                </a>
+                <!-- voltar -->
+                <a href="../login/index.html" class="btn-voltar">
+                    Voltar para Login
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
