@@ -196,21 +196,21 @@ body {
     letter-spacing: 1.5px; 
     text-transform: uppercase; 
     color:  var(--bg-light); 
-    background: linear-gradient(135deg, var(--accent-orange), #e67e00); 
+    background: linear-gradient(135deg, var( --primary-blue));
     cursor: pointer; 
-    box-shadow: 0 4px 16px var(--accent-orange); 
+    box-shadow: 0 4px 16px #1f76b5; 
     transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.2s ease; 
 } 
  
 .btn-login:hover { 
-    background: linear-gradient(135deg, var(--accent-orange-hover), #c96800); 
-    box-shadow: 0 6px 20px var(--accent-orange-hover); 
+    background: linear-gradient(135deg, #1f76b5); 
+    box-shadow: 0 6px 20px var(); 
     transform: translateY(-1px); 
 } 
  
 .btn-login:active { 
     transform: translateY(0px); 
-    box-shadow: 0 2px 8px var(--accent-orange); 
+    box-shadow: 0 2px 8px #1f76b5; 
 } 
  
 .forgot-link { 
